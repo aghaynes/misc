@@ -19,16 +19,32 @@ nth <- 1
 for(i in names(dat)[names(dat) %in% dd$field_name]){
  
   tmp_dd <- dd[dd$field_name == i,]
-  events <- instmap$unique_event_name[instmap$form_name == tmp_dd$form_name]
- 
+  events <- instmap$unique_event_name[instmap$form == tmp_dd$form_name]
+  tmp1 <- dat[dat$redcap_event_name %in% events, ]
+  
   if(tmp_dd$branching_logic != "" & !is.na(tmp_dd$branching_logic)){
     bl <- tmp_dd$branching_logic[1]
-    bl <- gsub("=", "==", bl)
-    bl <- gsub("or", "|", bl)
- 
+    # equals
+    bl <- gsub("[[:blank:]]=", " ==", bl)
+    # and/or
+    bl <- gsub("\\<or\\>", "|", bl)
+    bl <- gsub("\\<and\\>", "&", bl)
+    bl <- gsub("\\<and\\>", "&", bl)
+    # variable names
+    bl <- gsub("[", "", bl, fixed = TRUE)
+    bl <- gsub("]", "", bl, fixed = TRUE)
+    # quotes around answers
+    bl <- gsub("'", "", bl, fixed = TRUE)
+    # options
+    bl <- gsub("(", "___", bl, fixed = TRUE)
+    bl <- gsub(")", "", bl, fixed = TRUE)
+    # branching logic
+    r <- regmatches(bl, regexpr("[[:alnum:]_]{2,} <>", bl))
+    if(length(r) > 0) bl <- gsub(r, sprintf("!is.na(%s)", gsub("<>", "", r)), bl)
+    
+    tmp1 <- subset(tmp1, with(tmp1, eval(parse(text = bl))))
   }
  
-  tmp1 <- dat[dat$redcap_event_name %in% events, ]
  
   if(sum(is.na(tmp1[, i]))>0){
     tmp <- tmp1[is.na(tmp1[, i]), ]
