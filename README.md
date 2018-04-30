@@ -8,3 +8,4 @@ Miscellaneous bits and pieces
 4. rc_validate - beginnings of some code to validate REDCap data
 5. mybox - a couple of functions for boxplots
 6. clean_slivers - remove slivers from geometries (also in tlocoh, which is on R-forge)
+7. rc_export - export code from redcap
