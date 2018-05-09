@@ -9,3 +9,4 @@ Miscellaneous bits and pieces
 5. mybox - a couple of functions for boxplots
 6. clean_slivers - remove slivers from geometries (also in tlocoh, which is on R-forge)
 7. rc_export - export code from redcap
+8. flow_template.R - r code template for a clinical trial flow chart
