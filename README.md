@@ -1,3 +1,4 @@
+
 # misc
 
 Miscellaneous bits and pieces
@@ -10,3 +11,5 @@ Miscellaneous bits and pieces
 6. clean_slivers - remove slivers from geometries (also in tlocoh, which is on R-forge)
 7. rc_export - export code from redcap
 8. flow_template.R - r code template for a clinical trial flow chart
+9. rc_dictionaryParsers - r code to handle data diction from redcap and label variables accordingly
+10. descriptivesFunctions - rcode to loop through a data frame and return descriptives in a form that can be relatively easily turned into a baseline table
