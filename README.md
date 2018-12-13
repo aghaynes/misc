@@ -13,3 +13,4 @@ Miscellaneous bits and pieces
 8. flow_template.R - r code template for a clinical trial flow chart
 9. rc_dictionaryParsers - r code to handle data diction from redcap and label variables accordingly
 10. descriptivesFunctions - rcode to loop through a data frame and return descriptives in a form that can be relatively easily turned into a baseline table
+11. JAMA modified - Modified version of Endnote's JAMA style (supposedly AMA style), which lists only the first author for inline references, rather than all of them (as in the original version)
