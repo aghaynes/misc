@@ -11,7 +11,7 @@ Can have private or public repositories.
 Really good for developing R packages 
 
 * stable version on CRAN, development version 
-* integrates with continuous integration
+* integrates with continuous integration (CI)
   * circleCI
   * travis-ci
   * appveyor
@@ -32,22 +32,36 @@ Really good for developing R packages
   
 ### What I do
 1. fork/create a repo online
-2. use cmd to clone it to my local machine
+2. use cmd to clone it to my local machine using cmd
   * ![](figs/gitclone.png)
 3. create a new branch (easiest within RStudio)
   * ![](figs/rs_branch.png)
   * if you're connected to the internet, the branch will automatically by pushed to github
-4. make my changes
+  * you can have as many branches as you want
+    * need to take a little bit of care - 
+4. make my changes (via RStudio)
   * open files, add functionality/fix bugs/whatever
-5. commit the changes
-6. push the changes to github
-7. happy?
-  * yes! -> Make a pull request
-  * no :( -> Make more changes
+5. commit the changes (via RStudio)
+6. push the changes to github (via RStudio)
+  * if using CI, any the appropriate app has permissions for your fork, CI will run now. If only the master has CI enabled, it'll run when you make a pull request.
+7. working with others?
+  * yes! Have other pull requests been made?
+    * yes! -> pull the current master, clear any conflicts
+      * set up a remote to the master and pull using cmd - 
+        * e.g. 
+        * git remote add "ctu" "https://github.com/CTU-Bern/presize.git"
+        * git pull ctu
+      * can do all sorts of stuff via remotes (see the remotes section of Happy git with R)
+    * no! happy days, continue
+8. happy?
+  * yes! -> Make a pull request (on github)
+  * no :( -> Make more changes and reiterate steps 7 and 8 until happy.
 
 
+### Where to get help and resources
+git is very common. There are alot of people out there that have asked questions already so google is your friend! Most of the time it has an answer.
 
-
+[Happy git with R](https://happygitwithr.com/) covers just about everything you would want to know.
 
 
 
