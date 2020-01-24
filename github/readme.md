@@ -19,6 +19,7 @@ Really good for developing R packages
     * you know when something breaks
     * runs all of your tests
     * not exactly the same as the tests CRAN run, but better than nothing
+    * [secuTrialR uses this](https://github.com/SwissClinicalTrialOrganisation/secuTrialR/pull/153)
 * can install packages directly from github via `remotes::install_github` (also from bitbucket and others)
 * really good for collaborating
   * each user/developer
@@ -29,10 +30,14 @@ Really good for developing R packages
     * ![](figs/gitpr.png)
     * can also pull more recent changes
   * ![](figs/gitbranch.png)
+* package website based on readme, helpfiles and vignettes 
+  * [presize](https://ctu-bern.github.io/presize/) 
+  * [ggplot2](https://ggplot2.tidyverse.org/))
   
 ### What I do
 1. fork/create a repo online
 2. use cmd to clone it to my local machine using cmd
+  * ![](figs/gitclone_url.png)
   * ![](figs/gitclone.png)
 3. create a new branch (easiest within RStudio)
   * ![](figs/rs_branch.png)
@@ -51,7 +56,7 @@ Really good for developing R packages
         * e.g. 
         * git remote add "ctu" "https://github.com/CTU-Bern/presize.git"
         * git pull ctu
-      * can do all sorts of stuff via remotes (see the remotes section of Happy git with R)
+      * you can do all sorts of stuff via remotes (see the remotes section of Happy git with R)
     * no! happy days, continue
 8. happy?
   * yes! -> Make a pull request (on github)
