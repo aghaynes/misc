@@ -33,6 +33,7 @@ Really good for developing R packages
 * package website based on readme, helpfiles and vignettes 
   * [presize](https://ctu-bern.github.io/presize/) 
   * [ggplot2](https://ggplot2.tidyverse.org/))
+* bug reports/issue tracking
   
 Could also use it as a repository for the code behind a paper, although something more static more be more suitable (e.g. zenodo?), as you can change things on github.
 
