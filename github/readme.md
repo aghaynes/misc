@@ -53,7 +53,10 @@ Doesnt have to be R code, could be anything.
 4. make my changes (via RStudio)
   * open files, add functionality/fix bugs/whatever
 5. commit the changes (via RStudio)
+  * ![](figs/rs_commit.png)
+  * ![](figs/rs_commit2.png)
 6. push the changes to github (via RStudio)
+  * ![](figs/rs_push.png)
   * if using CI, any the appropriate app has permissions for your fork, CI will run now. If only the master has CI enabled, it'll run when you make a pull request.
 7. working with others?
   * yes! Have other pull requests been made?
