@@ -2,7 +2,7 @@
 
 ![](figs/github.png)
 
-Version control system, collaboration, R package repo.
+Version control system, collaboration, software development.
 
 Uses git in the background to enable version control.
 
@@ -33,6 +33,12 @@ Really good for developing R packages
 * package website based on readme, helpfiles and vignettes 
   * [presize](https://ctu-bern.github.io/presize/) 
   * [ggplot2](https://ggplot2.tidyverse.org/))
+  
+Could also use it as a repository for the code behind a paper, although something more static more be more suitable (e.g. zenodo?), as you can change things on github.
+
+Also useful for saving chunks of code that might be useful again (like a dropbox). 
+
+Doesnt have to be R code, could be anything.
   
 ### What I do
 1. fork/create a repo online
@@ -68,6 +74,7 @@ git is very common. There are alot of people out there that have asked questions
 
 [Happy git with R](https://happygitwithr.com/) covers just about everything you would want to know.
 
+[Atlassian](https://www.atlassian.com/git/tutorials/what-is-git) are folk behind bitbucket and have a some very good descriptions.
 
 
 
