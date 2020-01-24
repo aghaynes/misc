@@ -19,12 +19,15 @@ Really good for developing R packages
     * you know when something breaks
     * runs all of your tests
     * not exactly the same as the tests CRAN run, but better than nothing
+* can install packages directly from github via `remotes::install_github` (also from bitbucket and others)
 * really good for collaborating
   * each user/developer
     * forks the main repository
+    * ![](figs/gitfork.png)
     * develops their parts in isolation
-    * pushes the developments back to the master
+    * pushes the developments back to the master (more later)
+    * ![](figs/gitpr.png)
     * can also pull more recent changes
-    * ![https://v1study.com/git-branch.html](figs/gitbranch.png)
+  * ![](figs/gitbranch.png)
   
 
