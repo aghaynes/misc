@@ -30,4 +30,33 @@ Really good for developing R packages
     * can also pull more recent changes
   * ![](figs/gitbranch.png)
   
+### What I do
+1. fork/create a repo online
+2. use cmd to clone it to my local machine
+  * ![](figs/gitclone.png)
+3. create a new branch (easiest within RStudio)
+  * ![](figs/rs_branch.png)
+  * if you're connected to the internet, the branch will automatically by pushed to github
+4. make my changes
+  * open files, add functionality/fix bugs/whatever
+5. commit the changes
+6. push the changes to github
+7. happy?
+  * yes! -> Make a pull request
+  * no :( -> Make more changes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
