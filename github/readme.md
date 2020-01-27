@@ -35,11 +35,11 @@ Really good for developing R packages
   * [ggplot2](https://ggplot2.tidyverse.org/))
 * bug reports/issue tracking
   
-Could also use it as a repository for the code behind a paper, although something more static more be more suitable (e.g. zenodo?), as you can change things on github.
+Could also use it as a repository for the code behind a paper or a project (e.g. an [RCT analysis MINDUSA RCT](https://github.com/jenniferthompson/MINDUSARCT) and [data management/cleaning](https://github.com/jenniferthompson/MINDUSADataMgmt)), although something more static more be more suitable (e.g. [zenodo](https://zenodo.org/)), as you can change things on github.
 
 Also useful for saving chunks of code that might be useful again (like a dropbox). 
 
-Doesnt have to be R code, could be anything.
+Doesnt have to be R code, could be anything (other languages, data, even binaries).
   
 ### What I do
 1. fork/create a repo online
@@ -69,7 +69,7 @@ Doesnt have to be R code, could be anything.
       * you can do all sorts of stuff via remotes (see the remotes section of Happy git with R)
     * no! happy days, continue
 8. happy?
-  * yes! -> Make a pull request (on github)
+  * yes! -> Make a pull request to either own master branch (if working on my own repo) or to the master branch of the original repo (if working on someone elses repo) (on github)
   * no :( -> Make more changes and reiterate steps 7 and 8 until happy.
 
 
@@ -78,7 +78,7 @@ git is very common. There are alot of people out there that have asked questions
 
 [Happy git with R](https://happygitwithr.com/) covers just about everything you would want to know.
 
-[Atlassian](https://www.atlassian.com/git/tutorials/what-is-git) are folk behind bitbucket and have a some very good descriptions.
+[Atlassian](https://www.atlassian.com/git/tutorials/what-is-git) are the folk behind bitbucket and have some very good descriptions.
 
 
 
