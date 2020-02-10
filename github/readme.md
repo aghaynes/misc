@@ -40,6 +40,10 @@ Could also use it as a repository for the code behind a paper or a project (e.g.
 Also useful for saving chunks of code that might be useful again (like a dropbox). 
 
 Doesnt have to be R code, could be anything (other languages, data, even binaries).
+
+### Credentials?
+
+You might need to set up some credentials... See [Happy git with R](https://happygitwithr.com/credential-caching.html) for lots of details. This is a one time step... well, once per computer...
   
 ### What I do
 1. fork/create a repo online
